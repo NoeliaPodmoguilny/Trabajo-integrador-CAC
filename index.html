@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conferencia Bs As</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="./CSS/estilos.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="header__img " src="./Assets/Imagenes/codoacodo.png" alt="Logo codo a codo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"><span class="navbar-toggler-icon"></span></button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Conf. Bs. As.</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">La Conferencia</a>
+                                <a class="nav-link" href="#losOradores">Los Oradores</a>
+                                <a class="nav-link" href="#lugarYfecha">Lugar y Fecha</a>
+                                <a class="nav-link" href="#convierteteEnOrador">Conviértete en Orador</a>
+                                <a class="nav-link header__navlinks--green" href="./Pages/footer.html"target="_BLANK">Comprar Tickets</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>  
+        </header>
+
+        <section class="position-relative">
+            <div id="carouselExampleControls" class="carousel slide brilloImg" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Assets/Imagenes/palacio_aguas.jpg" class="d-block w-100" alt="Buenos Aires 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/Imagenes/bsas2.jpg" class="d-block w-100" alt="Buenos Aires 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Assets/Imagenes/obelisco.jpg" class="d-block w-100" alt="Buenos Aires 3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+            <div class="position-absolute main__texto">
+                <h1>Conferencia de Buenos Aires</h1>
+                 <p class="main__texto-p">Una de las conferencias más grandes en Latinoamérica, pone en foco la innovación y los medios de comunicación. En esta edición se juntarán  a emprendedores, periodistas, desarrolladores y diseñadores del mundo para debatir sobre desinformación, IA, Web3 y Metaverso.</p>
+                <a class="main__links whiteLinks" href="#convierteteEnOrador">Quiero ser orador</a>
+                <a class="main__links main__links-green whiteLinks" href="./Pages/footer.html"target="_BLANK">Comprar ticket</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="subtitle" id="losOradores">
+                <h5>Conoce a los</h5>
+                <h2 class="fw-semibold">ORADORES</h2>
+            </div>
+            <div class="cards">
+                <div class="cards__borde">
+                    <img class="cards__img" src="./Assets/Imagenes/steve.jpg" alt="Steve Jobs" loading="lazy">
+                    <div class="cards__contenido">
+                        <a class="cards__links cards__links-js whiteLinks" href="">JavaScript</a>
+                        <a class="cards__links cards__links-r whiteLinks" href="">React</a>
+                        <h3 class="fw-bold">Steve Jobs</h3>
+                        <p class="cards__texto text-secondary">Informático y empresario estadounidense. Padre del primer ordenador personal y fundador de Apple Computer, probablemente la empresa más innovadora del sector, este mago de la informática fue uno de los más influyentes de la vertiginosa escalada tecnológica en que aún vive el mundo actual, contribuyendo decisivamente a la popularización de la informática.</p>
+                    </div>
+                </div>
+             
+                <div class="cards__borde">
+                    <img class="cards__img" src="./Assets/Imagenes/bill.jpg" alt="Bill Gates" loading="lazy">
+                    <div class="cards__contenido">
+                        <a class="cards__links cards__links-js whiteLinks" href="">JavaScript</a>
+                        <a class="cards__links cards__links-r whiteLinks" href="">React</a>
+                        <h3 class="fw-bold">Bill Gates</h3>
+                        <p class="cards__texto text-secondary">Informático y empresario estadounidense, fundador de Microsoft. La fortuna de este precoz programador, que no llegó a terminar sus estudios y que a los 31 años era ya multimillonario, procede del éxito arrollador de su sistema operativo, el MS-DOS (1981), que evolucionaría hasta convertirse en el popular Windows 3.1 (1992) y daría lugar a las sucesivas versiones de este sistema operativo.</p>
+                    </div>
+                </div>
+            
+                <div class="cards__borde">
+                    <img class="cards__img" src="./Assets/Imagenes/ada.jpeg" alt="Ada Lovelace" loading="lazy">
+                    <div class="cards__contenido">
+                        <a class="cards__links cards__links-n whiteLinks" href="">Negocios</a>
+                        <a class="cards__links cards__links-s whiteLinks" href="">Startups</a>
+                        <h3 class="fw-bold">Ada Lovelace</h3>
+                        <p class="cards__texto text-secondary">La "madre" de la programación. Pionera en el mundo de la informática y uno de los nombres científicos más importantes del siglo XIX. Escribió el primer algoritmo informático de la historia. Ella misma fue capaz de introducirlo, por primera vez, en una máquina. Con esto pudo explicar los primeros conceptos informáticos que, todavía hoy, persisten en la actualidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="information" id="lugarYfecha">
+            <img class="information__img" src="./Assets/Imagenes/obelisco.jpg" alt="Imagen Obelisco"loading="lazy">
+            <div class="information__texto">
+                <h3 class="fw-bold">Buenos Aires</h3>  
+                <p>Entre el 25 y el 27 de octubre se llevará a cabo el evento IT en la Ciudad Atónoma de Buenos Aires.
+                Dicho evento tendrá lugar en el NH Hotel Group ubicado en Cerrito 154, CABA.</p>
+                <iframe class="information__texto-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.7959458850955!2d-58.38816954204213!3d-34.606741369026054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacfeeb9d43b%3A0xe3a4cede9ca734f7!2sHotel%20NH%20Buenos%20Aires%209%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1663981706534!5m2!1ses-419!2sar" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a class="information__texto-link whiteLinks" href="https://www.nh-hoteles.es/hotel/nh-buenos-aires-9-de-julio"target="_BLANK">Conocé más</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="subtitle" id="convierteteEnOrador">
+                <h5>Conviértete en un</h5>
+                <h2 class="fw-semibold">ORADOR</h2>
+                <p class="subtitle__p">Anótate como orador para dar una <a class="subtitle__p--underline" href="https://www.yoscoaching.com/blog/que-es-la-presentacion-ignite-y-como-se-hace-guia-de-5-pasos-para-crear-la-tuya/" target="_blank">charla ignite</a>. Cuéntanos de qué quieres hablar</p>
+            </div>
+                <form class="container mb-md-3 w-50" action="">
+                    <div class="row">
+                        <div class="col">
+                        <input type="text" class="form-control mb-md-3 mb050rem" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                        <input type="text" class="form-control mb-md-3 mb050rem" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea" class="text-muted">Sobre qué quieres hablar?</label>
+                        <p class="text-muted textSize">Recuerda incluir un título para tu charla</p>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="py-2 fw-bold form__input--green">Enviar</button>
+                    </div>
+                </form>
+        </section>
+        
+        <footer class="footer">
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Preguntas Frecuentes</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Contáctanos</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Prensa</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Conferencias</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Términos y condiciones</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Privacidad</a>
+            <a class="footer__links whiteLinks fw-bold" href="./Pages/footer.html"target="_BLANK">Estudiantes</a>
+        </footer>
+        <script src="./JS/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
