@@ -203,6 +203,9 @@ Estilos para page footer y comprar tickets
 Estilos Responsive Design
 ---------------------------------------------------------*/
 @media screen and (max-width: 758px) {
+    .header__img    {
+        width:12%;
+    }
     .position-absolute {
         position: absolute;
     }
@@ -211,11 +214,11 @@ Estilos Responsive Design
     }
     .main__texto{
         text-align: center;
-        width: 60%;
+        width: 70%;
         height: auto;
-        top: 35%;
-        left: 20%;
-        font-size: small;
+        top: 20%;
+        left: 15%;
+        font-size: 0.7rem;
     }
     .cards  {
         flex-direction: column;
