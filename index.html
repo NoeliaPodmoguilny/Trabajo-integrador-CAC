@@ -10,10 +10,11 @@
         <link rel="stylesheet" href="./CSS/estilos.css">
     </head>
     <body>
+        <!-- -------------NAVEGADOR---------------- -->
         <header>
             <nav class="navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="header__img" src="./Assets/Imagenes/codoacodo.png" alt="Logo codo a codo"></a>
+                    <a class="navbar-brand" href="#"><img class="position-absolute top-0 header__img" src="./Assets/Imagenes/codoacodo.png" alt="Logo codo a codo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"><span class="navbar-toggler-icon"></span></button>
                     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
@@ -35,18 +36,18 @@
                 </div>
             </nav>  
         </header>
-
+        <!-- --------------------CARRUSEL----------------------- -->
         <section class="position-relative">
             <div id="carouselExampleControls" class="carousel slide brilloImg" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./Assets/Imagenes/palacio_aguas.jpg" class="d-block w-100" alt="Buenos Aires 1">
+                    <img src="./Assets/Imagenes/palacio_aguas.jpg" class="d-block w-100 heightImg" alt="Buenos Aires 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="./Assets/Imagenes/bsas2.jpg" class="d-block w-100" alt="Buenos Aires 2">
+                    <img src="./Assets/Imagenes/bsas2.jpg" class="d-block w-100 heightImg" alt="Buenos Aires 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="./Assets/Imagenes/obelisco.jpg" class="d-block w-100" alt="Buenos Aires 3">
+                    <img src="./Assets/Imagenes/obelisco.jpg" class="d-block w-100 heightImg" alt="Buenos Aires 3">
                 </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -58,19 +59,19 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        
+        <!-- -------------TEXTO CARRUSEL---------------- -->
             <div class="position-absolute main__texto">
-                <h1>Conferencia de Buenos Aires</h1>
+                <h3>Conferencia de Buenos Aires</h3>
                  <p>Una de las conferencias más grandes en Latinoamérica, pone en foco la innovación y los medios de comunicación. En esta edición se juntarán  a emprendedores, periodistas, desarrolladores y diseñadores del mundo para debatir sobre desinformación, IA, Web3 y Metaverso.</p>
                 <a class="main__links whiteLinks link-light" href="#convierteteEnOrador">Quiero ser orador</a>
                 <a class="main__links main__links-green whiteLinks link-light" href="./Pages/footer.html"target="_BLANK">Comprar ticket</a>
             </div>
         </section>
-
+        <!-- ------------------CARDS--------------------- -->
         <section>
             <div class="subtitle" id="losOradores">
                 <h5>Conoce a los</h5>
-                <h2 class="fw-semibold">ORADORES</h2>
+                <h3 class="fw-semibold">ORADORES</h3>
             </div>
             <div class="card-group mx-5 my-2">
                 <div class="card mx-2 border">
@@ -78,7 +79,7 @@
                     <div class="p-3">
                         <a class="cards__links cards__links-js  link-dark" href="">JavaScript</a>
                         <a class="cards__links cards__links-r  link-light" href="">React</a>
-                        <h3 class="fw-bold">Steve Jobs</h3>
+                        <h4 class="fw-bold">Steve Jobs</h4>
                         <p class="text-secondary">Informático y empresario estadounidense. Padre del primer ordenador personal y fundador de Apple Computer, probablemente la empresa más innovadora del sector, este mago de la informática fue uno de los más influyentes de la vertiginosa escalada tecnológica en que aún vive el mundo actual, contribuyendo decisivamente a la popularización de la informática.</p>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                     <div class="p-3">
                         <a class="cards__links cards__links-js  link-dark" href="">JavaScript</a>
                         <a class="cards__links cards__links-r  link-light" href="">React</a>
-                        <h3 class="fw-bold">Bill Gates</h3>
+                        <h4 class="fw-bold">Bill Gates</h4>
                         <p class="text-secondary">Informático y empresario estadounidense, fundador de Microsoft. La fortuna de este precoz programador, que no llegó a terminar sus estudios y que a los 31 años era ya multimillonario, procede del éxito arrollador de su sistema operativo, el MS-DOS (1981), que evolucionaría hasta convertirse en el popular Windows 3.1 (1992) y daría lugar a las sucesivas versiones de este sistema operativo.</p>
                     </div>
                 </div>
@@ -98,28 +99,28 @@
                     <div class="p-3">
                         <a class="cards__links cards__links-n  link-light" href="">Negocios</a>
                         <a class="cards__links cards__links-s  link-light" href="">Startups</a>
-                        <h3 class="fw-bold">Ada Lovelace</h3>
+                        <h4 class="fw-bold">Ada Lovelace</h4>
                         <p class="text-secondary">La "madre" de la programación. Pionera en el mundo de la informática y uno de los nombres científicos más importantes del siglo XIX. Escribió el primer algoritmo informático de la historia. Ella misma fue capaz de introducirlo, por primera vez, en una máquina. Con esto pudo explicar los primeros conceptos informáticos que, todavía hoy, persisten en la actualidad.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- -------------LUGAR Y FECHA ---------------- -->
         <section class="information" id="lugarYfecha">
             <img class="information__img" src="./Assets/Imagenes/obelisco.jpg" alt="Imagen Obelisco"loading="lazy">
             <div class="information__texto">
-                <h3 class="fw-bold">Buenos Aires</h3>  
+                <h4 class="fw-bold">Buenos Aires</h4>  
                 <p>Entre el 25 y el 27 de octubre se llevará a cabo el evento IT en la Ciudad Atónoma de Buenos Aires.
                 Dicho evento tendrá lugar en el NH Hotel Group ubicado en Cerrito 154, CABA.</p>
                 <iframe class="information__texto-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.7959458850955!2d-58.38816954204213!3d-34.606741369026054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacfeeb9d43b%3A0xe3a4cede9ca734f7!2sHotel%20NH%20Buenos%20Aires%209%20de%20Julio!5e0!3m2!1ses-419!2sar!4v1663981706534!5m2!1ses-419!2sar" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <a class="information__texto-link whiteLinks link-light" href="https://www.nh-hoteles.es/hotel/nh-buenos-aires-9-de-julio"target="_BLANK">Conocé más</a>
             </div>
         </section>
-
+        <!-- -------------FORMULARIO---------------- -->
         <section>
             <div class="subtitle" id="convierteteEnOrador">
                 <h5>Conviértete en un</h5>
-                <h2 class="fw-semibold">ORADOR</h2>
+                <h3 class="fw-semibold">ORADOR</h3>
                 <p class="subtitle__p">Anótate como orador para dar una <a class="subtitle__p--underline" href="https://www.yoscoaching.com/blog/que-es-la-presentacion-ignite-y-como-se-hace-guia-de-5-pasos-para-crear-la-tuya/" target="_blank">charla ignite</a>. Cuéntanos de qué quieres hablar</p>
             </div>
                 <form class="container mb-md-3 w-50" action="">
@@ -141,7 +142,7 @@
                     </div>
                 </form>
         </section>
-        
+        <!-- -------------PIE DE PAGINA---------------- -->
         <footer class="footer">
             <a class="footer__links whiteLinks fw-bold link-light" href="./Pages/footer.html"target="_BLANK">Preguntas Frecuentes</a>
             <a class="footer__links whiteLinks fw-bold link-light" href="./Pages/footer.html"target="_BLANK">Contáctanos</a>

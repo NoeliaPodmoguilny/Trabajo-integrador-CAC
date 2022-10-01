@@ -12,7 +12,7 @@ Estilos comunes para todos los elementos
 Estilos para el index
 -------------------------------------------------------------------*/
 .header__img  {
-    width: 30%;
+    width: 6rem;
 }
 .header__navlinks--green  {
 color: rgb(57, 143, 40);
@@ -187,13 +187,17 @@ Estilos Responsive Design
 ---------------------------------------------------------*/
 @media screen and (max-width: 758px) {
     .header__img    {
-        width:12%;
+        width:6rem;
     }
     .position-absolute {
         position: absolute;
     }
     .position-relative  {
         position: relative;
+    }
+    .heightImg  {
+        height: 20rem;
+        object-fit: cover;
     }
     .main__texto{
         text-align: center;
