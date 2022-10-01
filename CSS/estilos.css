@@ -187,7 +187,7 @@ Estilos Responsive Design
 ---------------------------------------------------------*/
 @media screen and (max-width: 758px) {
     .header__img    {
-        width:6rem;
+        width:7rem;
     }
     .position-absolute {
         position: absolute;
