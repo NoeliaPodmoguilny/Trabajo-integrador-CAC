@@ -12,16 +12,25 @@
 <body>
 <!-- ------------------------------------------NAVEGADOR------------------------------------ -->
     <header>
-        <nav>
-            <div class="d-flex flex-row bgGrey align-items-center">
-                <img src="../Assets/Imagenes/codoacodo.png" alt="Logo Codo a Codo" class="header__img m-3">
-                <h5 class="text-white m-3">Conf. Bs. As.</h5>
-                    <div class="d-flex flex-row mLeft">
-                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html">La Conferencia</a>
-                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #losOradores">Los Oradores</a>
-                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #lugarYfecha">Lugar y Fecha</a>
-                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #convierteteEnOrador">Conviértete en Orador</a>
-                        <a class="nav-link-hover fw-semibold header__navlinks--green m-2" href="#"target="_BLANK">Comprar Tickets</a>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="position-absolute top-0 header__img" src="../Assets/Imagenes/codoacodo.png" alt="Logo codo a codo" loading="lazy"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-end text-bg-dark bg-opacity-75" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasDarkNavbarLabel">Conf. Bs. As.</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="../index.html">La Conferencia</a>
+                                <a class="nav-link fw-semibold" href="../index.html #losOradores">Los Oradores</a>
+                                <a class="nav-link fw-semibold" href="../index.html  #lugarYfecha">Lugar y Fecha</a>
+                                <a class="nav-link fw-semibold" href="../index.html  #convierteteEnOrador">Conviértete en Orador</a>
+                                <a class="nav-link fw-semibold header__navlinks--green" href="#"target="_BLANK">Comprar Tickets</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -36,7 +45,7 @@
                     <div class="card-body">
                         <h6 class="card-title text-body">Tiene un descuento</h6>
                         <h4 class="fw-semibold text-body">80%</h4>
-                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                        <p class="card-text text-muted fsmall">* Presentar documentación</p>
                     </div>
                 </div>
                 <div class="card border border-info rounded-1 m-3" >
@@ -44,7 +53,7 @@
                     <div class="card-body t">
                         <h6 class="card-title text-body">Tiene un descuento</h6>
                         <h4 class="fw-semibold text-body">50%</h4>
-                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                        <p class="card-text text-muted fsmall">* Presentar documentación</p>
                     </div>
                 </div>
                 <div class="card border border-warning rounded-1 m-3">
@@ -52,7 +61,7 @@
                     <div class="card-body">
                         <h6 class="card-title text-body">Tiene un descuento</h6>
                         <h4 class="fw-semibold text-body">15%</h4>
-                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                        <p class="card-text text-muted fsmall">* Presentar documentación</p>
                     </div>
                 </div>
             </div> 

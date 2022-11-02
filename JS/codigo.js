@@ -18,7 +18,7 @@ function ClaseError()   {
     let x = document.querySelectorAll(".form-select, .form-control");
     let i;
     for (i = 0; i < x.length; i++)  {
-        x[i].classList.remove("is-ivalid");
+        x[i].classList.remove("is-invalid");
     }
 }
 
@@ -32,62 +32,59 @@ function TotalAPagar()  {
     ClaseError();
 
     if  (nombre.value === "")   {
-        nombre.classList.add("is-ivalid");
+        nombre.classList.add("is-invalid");
         nombre.focus();
         alert("Por favor, escribí tu nombre");
         return;
     }
 
     if  (apellido.value === "")   {
-        apellido.classList.add("is-ivalid");
+        apellido.classList.add("is-invalid");
         apellido.focus();
         alert("Por favor, escribí tu apellido");
         return;
     }
 
     if  (mail.value === "")   {
-        mail.classList.add("is-ivalid");
+        mail.classList.add("is-invalid");
         mail.focus();
         alert("Por favor, escribí tu mail");
         return;
     }
 
     if  (!mailValido(mail.value))    {
-        mail.classList.add("is-ivalid");
+        mail.classList.add("is-invalid");
         mail.focus();
         alert("Por favor, escribí un email válido");
         return;
     }
 
     if  ((cantidadTicket.value == 0) || (isNaN(cantidadTicket.value)))  {
-        cantidadTicket.classList.add("is-ivalid");
+        cantidadTicket.classList.add("is-invalid");
         cantidadTicket.focus();
         alert("Por favor, ingrese una cantidad");
         return;
     }
 
     if  (categoriaTicket.value == "") {
-        categoriaTicket.classList.add("is-ivalid");
+        categoriaTicket.classList.add("is-invalid");
         categoriaTicket.focus();
         alert("Por favor, elegí una categoría");
         return;
     }
 
     let totalValorTicket = (cantidadTicket.value) * valorTicket;
-
-    switch(categoriaTicket.value)   {
-        case 0:
-            totalValorTicket = totalValorTicket;
-            break;
-        case 1:
-            totalValorTicket = totalValorTicket - (descuentoEstudiante / 100 * totalValorTicket);
-            break;
-        case 2:
-            totalValorTicket = totalValorTicket - (descuentoTrainee    / 100 * totalValorTicket);
-            break;
-        case 3:
-            totalValorTicket = totalValorTicket - (descuentoJunior     / 100 * totalValorTicket);
-            break;
+    if(categoriaTicket.value==0)    {
+        totalValorTicket=totalValorTicket;
+    }
+    else if(categoriaTicket.value==1)    {
+        totalValorTicket = totalValorTicket - ((descuentoEstudiante / 100) * totalValorTicket);
+    }
+    else if(categoriaTicket.value==2)    {
+        totalValorTicket = totalValorTicket - ((descuentoTrainee    / 100) * totalValorTicket);
+    }
+    else if(categoriaTicket.value==3)    {
+        totalValorTicket = totalValorTicket - ((descuentoJunior     / 100) * totalValorTicket);
     }
 
     totalPago.innerHTML = totalValorTicket;
