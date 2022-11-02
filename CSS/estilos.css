@@ -16,7 +16,42 @@ Estilos para el index
 }
 .header__navlinks--green  {
 color: rgb(57, 143, 40);
+text-decoration: none;
 }
+/*-------------estilos page Comprar Tickets--------------------*/
+.bgGrey {
+    background-color: rgb(51, 58, 64);
+}
+.mLeft  {
+    margin-left: 30%;
+}
+.nav-link-hover:hover{
+    color: white;
+}
+.nav__link--grey    {
+    color: grey;
+    text-decoration: none;
+}
+.card__titulo--1    {
+    background-color: rgb(13,110,253);
+}
+.m-0auto    {
+    margin: 0 auto;
+}
+.fsmall {
+    font-size: 0.82rem;
+}
+.button__green  {
+    width: 47%;
+    background-color:rgb(150, 201, 62);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+
 .main__texto{
     width: 35rem;
     height: auto;
@@ -96,7 +131,7 @@ color: black;
 Estilos para sección "fecha y lugar"
 ----------------------------------------------------------*/
 .information {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-flow: row wrap;

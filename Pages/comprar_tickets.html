@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Comprar Tickets</title>
+</head>
+<body>
+<!-- ------------------------------------------NAVEGADOR------------------------------------ -->
+    <header>
+        <nav>
+            <div class="d-flex flex-row bgGrey align-items-center">
+                <img src="../Assets/Imagenes/codoacodo.png" alt="Logo Codo a Codo" class="header__img m-3">
+                <h5 class="text-white m-3">Conf. Bs. As.</h5>
+                    <div class="d-flex flex-row mLeft">
+                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html">La Conferencia</a>
+                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #losOradores">Los Oradores</a>
+                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #lugarYfecha">Lugar y Fecha</a>
+                        <a class="nav-link-hover nav__link--grey fw-semibold m-2" href="../index.html #convierteteEnOrador">Conviértete en Orador</a>
+                        <a class="nav-link-hover fw-semibold header__navlinks--green m-2" href="#"target="_BLANK">Comprar Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </nav>  
+    </header>
+<!-- -------------------------------------------CARDS----------------------------------------- -->
+    <main>
+        <section>
+            <div class="card-group w-50 h-50 m-0auto mt-3 text-center">
+                <div class="card border border-primary rounded-1 m-3">
+                    <div class="card-header fw-semibold text-white bg-primary">Estudiante</div>
+                    <div class="card-body">
+                        <h6 class="card-title text-body">Tiene un descuento</h6>
+                        <h4 class="fw-semibold text-body">80%</h4>
+                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                    </div>
+                </div>
+                <div class="card border border-info rounded-1 m-3" >
+                    <div class="card-header fw-semibold text-white bg-info">Trainee</div>
+                    <div class="card-body t">
+                        <h6 class="card-title text-body">Tiene un descuento</h6>
+                        <h4 class="fw-semibold text-body">50%</h4>
+                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                    </div>
+                </div>
+                <div class="card border border-warning rounded-1 m-3">
+                    <div class="card-header fw-semibold text-white bg-warning">Junior</div>
+                    <div class="card-body">
+                        <h6 class="card-title text-body">Tiene un descuento</h6>
+                        <h4 class="fw-semibold text-body">15%</h4>
+                        <p class="card-text text-muted fsmall">* Preentar documentación</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section>
+            <div class="text-center">
+                <H2 class="fw-semibold">VALOR DE TICKET $200</H2>
+            </div>
+<!-- ----------------------------------------FORMULARIO----------------------------------------- -->
+            <div>
+                <form class="container mb-md-3 w-50" action="">
+                    <div class="row">
+                        <div class="col">
+                        <input id="nombre" type="text" class="form-control mb-md-3 mb050rem" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                        <input id="apellido" type="text" class="form-control mb-md-3 mb050rem" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                        <label for="floatingInput" class="text-muted">Email</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label text-body">Cantidad</label>
+                            <input type="number" min="1" max="10" class="form-control" id="validationCustom03" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label text-body">Categoría</label>
+                            <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">--Seleccione--</option>
+                            <option value="0">Sin categoría</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                            </select>
+                        </div>  
+                    </div>
+                    <div class="p-3 mt-4 bg-info bg-opacity-10 border border-primary border-opacity-25 rounded-end text-primary text-opacity-75">
+                        Total a pagar: $ <span id="totalPago"></span>
+                    </div>
+                    <div class="row">
+                        <button id="button_borrar" class="button__green m-0auto" type="reset">Borrar</button>
+                        <button id="button_resumen" class="button__green m-0auto" type="button">Resumen</button>
+                    </div>                                      
+                </form>
+            </div>
+        </section>
+    </main>
+<!-- -----------------------------------FOOTER------------------------------------ -->
+        <footer class="footer">
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Preguntas Frecuentes</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Contáctanos</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Prensa</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Conferencias</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Términos y condiciones</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Privacidad</a>
+            <a class="footer__links whiteLinks fw-bold link-light" href="../Pages/footer.html"target="_BLANK">Estudiantes</a>
+        </footer>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/codigo.js"></script>    
+</body>
+</html>
